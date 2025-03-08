@@ -1,0 +1,331 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Gilmer-Medium", sans-serif !important;
+}
+.navbar {
+  background-color: black;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left {
+  height: 65px;
+  width: 440px;
+  display: flex;
+  align-items: center;
+}
+.brandname {
+  height: 34px;
+  width: 120px;
+  background-size: cover;
+  background-image: url("Image/Phoenix/brand-logo/brandname.png");
+  position: relative;
+  left: 20px;
+}
+.middle {
+  height: 65px;
+  width: 536px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.logo {
+  height: 87px;
+  width: 100px;
+  background-image: url("Image/Phoenix/brand-logo/logo.png");
+  background-size: contain;
+  position: relative;
+  top: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.right {
+  height: 65px;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.login {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.login:hover{
+  transform: scale(1.15);
+}
+.signup {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.signup:hover{
+  transform: scale(1.15);
+}
+.checkout-title {
+  position: relative;
+  top: 30px;
+  text-align: center;
+}
+.home {
+  color: gray;
+  position: relative;
+  top: 17px;
+  left: 0;
+  margin: 0 auto;
+}
+.home:hover {
+  text-decoration: underline black;
+}
+.h4checkout {
+  color: gray;
+  position: relative;
+  left: 35px;
+}
+.container1 {
+  height: 1000px;
+  width: 1200px;
+  position: relative;
+  left: 160px;
+}
+.billing-details {
+  height: 165px;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 135px;
+}
+.container2 {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.first-name-box {
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.last-name-box {
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.container3 {
+  height: 110px;
+  width: 100%;
+}
+.address-paragraph {
+  position: relative;
+  left: 135px;
+}
+.address-box {
+  height: 40px;
+  width: 700px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 135px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.container4 {
+  height: 110px;
+  width: 100%;
+}
+.state-paragraph {
+  position: relative;
+  left: 135px;
+}
+.select-state {
+  height: 40px;
+  width: 700px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 135px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.container5 {
+  height: 110px;
+  width: 100%;
+}
+.pin-code-paragraph {
+  position: relative;
+  left: 135px;
+}
+.pincode-box {
+  height: 40px;
+  width: 700px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 135px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.container6 {
+  height: 110px;
+  width: 100%;
+}
+.phone-number-paragraph {
+  position: relative;
+  left: 135px;
+}
+.phone-number-box {
+  height: 40px;
+  width: 700px;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 135px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.payment {
+  height: 150px;
+  width: 1140px;
+}
+.payment h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.payment p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+.payment-option {
+  position: relative;
+  left: 134px;
+
+}
+.place-order {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  height: 50px;
+  width: 500px;
+  color: white;
+  background-color:#7d21cc;
+  position: relative;
+  top: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer {
+  height: 330px;
+  width: 100%;
+  background-color: #260943;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: white;
+}
+.footer1 {
+  height: 315px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  height: 225px;
+  width: 300px;
+}
+.footer2 {
+  height: 330px;
+  width: 350px;
+}
+.footer2 ul li {
+  margin-left: 20px;
+}
+.footer2 ul li:hover {
+  text-decoration: underline;
+}
+.footer3 {
+  height: 330px;
+  width: 350px;
+}
+.footer3 ul li {
+  margin-left: 20px;
+}
+.footer3 ul li:hover {
+  text-decoration: underline;
+}
+.footer4 {
+  height: 330px;
+  width: 350px;
+}
+.footer4 ul {
+  margin-left: 20px;
+}
+.footer-social-icon {
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-social-icon img {
+  height: 30px;
+  width: 30px;
+}
+.copyright {
+  height: 50px;
+  width: 100%;
+  background-color: #260943;
+}
+.copyright p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+}

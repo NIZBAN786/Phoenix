@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/productdetail.css">
+</head>
+<body>
+    <header>    
+        <div class="navbar">
+            <div class="left">
+                <a href="/"><div class="brandname"></div></a>
+            </div>
+            <div class="middle">
+                <div class="product" onclick=window.scrollTo(0,800) style="color: white;">PRODUCT</div>
+                <a href="/"><div class="logo"></div></a>
+                <a href="/support"><div class="support">SUPPORT</div></a>
+                <a href="/about"><div class="aboutus">ABOUT US</div></a>
+            </div>
+            <div class="right">
+                <a href="/profile"><div class="signup">PROFILE</div></a>
+            </div>
+        </div>
+    </header>
+    <h1>Product Detail</h1>
+    <div class="checkout">
+        <div class="checkout-title">
+            <h1>Checkout</h1>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="image">
+            <img src="/static//static/Image/Phoenix/earbuds-img/Flobuds100/flobuds1001.jpg" class="image" id="productimg">
+        </div>
+            <h1 id="productname">Flobuds 100</h1>
+            <h3 id="productprice">Rs.899.00</h3>
+    </div>
+    <div class="container2">
+        <p>Subtotal</p>
+        <h3 id="Sub">Rs.899.00</h3>
+    </div>
+    <div class="container3">
+        <p>Shipping</p>
+        <h3>Free</h3>
+    </div>
+    <div class="container4">
+        <p>Packing Fee</p>
+        <h3>Free</h3>
+    </div>
+    <div class="container5">
+        <p>Total</p>
+        <h3 id="total">Rs.899.00</h3>
+    </div>
+    <div class="place-order">
+        <a href="/order"><button type="submit" class="button">Next</button></a>
+    </div>
+    <div class="space"></div>
+    <div class="footer">
+        <div class="footer1">
+            <a href="/"><img src="/static/Image/Phoenix/brand-logo/logo-white.png" class="footer-logo"></a>
+        </div>
+        <div class="footer2">
+            <br><br>
+            <h2>Stuff You Should Buy</h2>
+            <br>
+            <ul>
+               <li><a href="/wirelessearbuds">Wireless Earbuds</a></li><br>
+               <li><a href="/headphones">Headphones</a></li><br>
+               <li><a href="/speakers">Speakers</a></li><br>
+               <li><a href="/keyboards">Keyboards</a></li><br>
+            </ul>
+        </div>
+        <div class="footer3">
+            <br><br>
+            <h2>Stuff You Should Know</h2>
+            <br>
+            <ul>
+                <li><a href="/about">About Us</a></li><br>
+                <li><a href="/support">Support</a></li><br>
+                <li><a href="/support">Terms and Conditions</a></li><br>
+                <li><a href="/support">Privacy Policy</a></li><br>
+                <li><a href="/support">Shipping Policy</a></li><br>
+                <li><a href="/support">Refund Policy</a></li><br>
+            </ul>
+        </div>
+        <div class="footer4">
+            <br><br>
+            <h2>Stuff You Should Know</h2>
+            <br>
+            <ul>
+                Stay Tuned For offers & updates<br> from Phoenix
+            </ul>
+            <div class="footer-social-icon">
+                <a href="https://www.instagram.com/"><img src="/static/Image/Phoenix/social-media-icons/instagram-icon-white&black.png" alt="instagram-icon"></a>
+                <a href="https://www.facebook.com/"><img src="/static/Image/Phoenix/social-media-icons/facebook-icon-white&black.png" alt="facebook-icon"></a>
+                <a href="https://www.youtube.com/"><img src="/static/Image/Phoenix/social-media-icons/youtube-icon-white&black.png" alt="youtube-icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights © 2024 [Phoenix]. All rights reserved</p>
+    </div>
+<script src="app.js"></script>
+<script defer>
+    const name = localStorage.getItem('product');
+    const price = localStorage.getItem('price');
+    const img = localStorage.getItem('img');
+
+    document.getElementById("productname").innerText = name;
+    document.getElementById("productprice").innerText = price;
+    document.getElementById("total").innerText = price;
+    document.getElementById("Sub").innerText = price;
+    document.getElementById("productimg").src = img;
+</script>
+</body>
+</html>

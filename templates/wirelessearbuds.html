@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Earbuds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='wirelessearbuds.css') }}">
+</head>
+<body>
+    <header>    
+        <div class="navbar">
+            <div class="left">
+                <a href="/"><div class="brandname"></div></a>
+            </div>
+            <div class="middle">
+                <a href="/"><div class="product">PRODUCT</div></a>
+                <a href="/"><div class="logo"></div></a>
+                <a href="//support"><div class="/support">/support</div></a>
+                <a href="/about"><div class="aboutus">ABOUT US</div></a>
+            </div>
+            <div class="right">
+                <a href="/profile"><div class="signup">PROFILE</div></a>
+            </div>
+        </div>
+    </header>
+    <div class="wirelessearbuds-title">
+        <h1 class="wireless-earphones-title">Wireless Earbuds</h1>
+    </div>
+    <div class="results">
+        <h3>showing 4 of 4 results</h3>
+    </div>
+    <div class="products-row-1">
+        <div class="products1">
+            <div class="flobuds100">
+                <a href="/flobuds100"><img src="{{ url_for('static', filename='Image/Phoenix/earbuds-img/Flobuds100/flobuds1001.jpg') }}" 
+                    alt="flobuds100" class="flobuds100-img"></a>
+                <h3 class="flobuds100-h3">Flobuds 100</h3>
+                <div class="flobuds100-price">
+                    <h3 class="flobuds100-before-price">Rs. 2,499.00</h3>
+                    <h3 class="flobuds100-after-price">Rs. 899.00</h3>
+                </div>
+            </div>
+            <div class="flobuds200">
+                <a href="/flobuds200"><img src="{{ url_for('static', filename='Image/Phoenix/earbuds-img/Flobuds200/flobuds2001.jpg') }}" 
+                    alt="flobuds200" class="flobuds200-img"></a>
+                <h3 class="flobuds200-h3">Flobuds 200</h3>
+                    <div class="flobuds200-price">
+                        <h3 class="flobuds200-before-price">Rs. 2,499.00</h3>
+                        <h3 class="flobuds200-after-price">Rs. 1,299.00</h3>
+                    </div>
+            </div>
+            <div class="phantom340">
+                <a href="/phantom340"><img src="{{ url_for('static', filename='Image/Phoenix/earbuds-img/Phantom340/phantom3401.jpg') }}" 
+                    alt="phantom340" class="phantom340-img"></a>
+                <h3 class="phantom340-h3">Phantom 340</h3>
+                <div class="phantom340-price">
+                    <h3 class="phantom340-before-price">Rs. 3,499.00</h3>
+                    <h3 class="phantom340-after-price">Rs. 1,999.00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products-row-2">
+        <div class="products2">
+            <div class="phantom850">
+                <a href="/phantom850"><img src="{{ url_for('static', filename='Image/Phoenix/earbuds-img/Phantom850/phantom8501.jpg') }}" 
+                    alt="phantom340" class="phantom850-img"></a>
+                <h3 class="phantom850-h3">Phantom 850</h3>
+                <div class="phantom850-price">
+                    <h3 class="phantom850-before-price">Rs. 2,999.00</h3>
+                    <h3 class="phantom850-after-price">Rs. 1,499.00</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <a href="/"><img src="{{ url_for('static', filename='Image/Phoenix/brand-logo/logo-white.png') }}" alt="Phoenix-logo"
+                class="footer-logo"></a>
+        </div>
+        <div class="footer2">
+            <br><br>
+            <h2>Stuff You Should Buy</h2>
+            <br>
+            <ul>
+               <li><a href="/wirelessearbuds">Wireless Earbuds</a></li><br>
+               <li><a href="/headphones">Headphones</a></li><br>
+               <li><a href="/speakers">Speakers</a></li><br>
+               <li><a href="/keyboards">Keyboards</a></li><br>
+            </ul>
+        </div>
+        <div class="footer3">
+            <br><br>
+            <h2>Stuff You Should Know</h2>
+            <br>
+            <ul>
+                <li><a href="/about">About Us</a></li><br>
+                <li><a href="/support">/support</a></li><br>
+                <li><a href="/support">Terms and Conditions</a></li><br>
+                <li><a href="/support">Privacy Policy</a></li><br>
+                <li><a href="/support">Shipping Policy</a></li><br>
+                <li><a href="/support">Refund Policy</a></li><br>
+            </ul>
+        </div>
+        <div class="footer4">
+            <br><br>
+            <h2>Stuff You Should Know</h2>
+            <br>
+            <ul>
+                Stay Tuned For offers & updates<br> from Phoenix
+            </ul>
+            <div class="footer-social-icon">
+                <a href="https://www.instagram.com/"><img src="{{url_for('static', filename='Image/Phoenix/social-media-icons/instagram-icon-white&black.png')}}" 
+                    alt="instagram-icon"></a>
+                <a href="https://www.facebook.com/"><img src="{{url_for('static', filename='Image/Phoenix/social-media-icons/facebook-icon-white&black.png')}}" 
+                    alt="facebook-icon"></a>
+                <a href="https://www.youtube.com/"><img src="{{url_for('static', filename='Image/Phoenix/social-media-icons/youtube-icon-white&black.png')}}" 
+                    alt="youtube-icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights © 2024 [Phoenix]. All rights reserved</p>
+    </div>
+</body>
+</html>

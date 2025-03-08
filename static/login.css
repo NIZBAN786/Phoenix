@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 100vw; 
+  height: 100vh;
+  background-image: url("Image/Phoenix/Login_page/loginpage.jpg");
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  padding-right: 50px; 
+}
+
+
+.login-box {
+  width: 400px; 
+  background-color: white;
+  padding: 40px;
+  border-radius: 33px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.username-title, .password-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.input-container {
+  position: relative;
+}
+
+
+.user-box, .password-box {
+  width: 100%;
+  height: 44.8px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding-left: 40px; /* Increase padding to make space for the icon */
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+
+.user-icon, .password-icon {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: gray;
+}
+
+
+.login-button {
+  width: 100%;
+  height: 48px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: 5px double gray;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.find-us-on {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,279 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Gilmer-Medium", sans-serif !important;
+}
+.navbar {
+  background-color: black;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left {
+  height: 65px;
+  width: 440px;
+  display: flex;
+  align-items: center;
+}
+.brandname {
+  height: 34px;
+  width: 120px;
+  background-size: cover;
+  background-image: url("Image/Phoenix/brand-logo/brandname.png");
+  position: relative;
+  left: 20px;
+}
+.middle {
+  height: 65px;
+  width: 536px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.logo {
+  height: 87px;
+  width: 100px;
+  background-image: url("Image/Phoenix/brand-logo/logo.png");
+  background-size: contain;
+  position: relative;
+  top: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.right {
+  height: 65px;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.login {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.login:hover{
+  transform: scale(1.15);
+}
+.signup {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.signup:hover{
+  transform: scale(1.15);
+}
+.checkout {
+  height: 160px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: larger;
+}
+.checkout-title {
+  position: relative;
+  top: 30px;
+}
+.home {
+  color: gray;
+  position: relative;
+  top: 21px;
+  left: -56px;
+}
+.home:hover {
+  text-decoration: underline;
+}
+.h4checkout {
+  color: gray;
+  position: relative;
+  left: 35px;
+}
+.container1 {
+  height: 130px;
+  width: 625px;
+  position: relative;
+  left: 450px;
+  display: flex;
+}
+.image {
+  height: 100px;
+  width: 100px;
+}
+.container1 h1 {
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+.container1 h3 {
+  position: relative;
+  left: 250px;
+  top: 30px;
+}
+.container2 {
+  height: 35px;
+  width: 625px;
+  position: relative;
+  left: 450px;
+  display: flex;
+}
+.container2 p {
+  font-size: 20px;
+}
+.container2 h3 {
+  position: relative;
+  left: 463px;
+}
+.container3 {
+  height: 35px;
+  width: 625px;
+  position: relative;
+  left: 450px;
+  display: flex;
+}
+.container3 p {
+  font-size: 20px;
+}
+.container3 h3 {
+  position: relative;
+  left: 505px;
+}
+.container4 {
+  height: 35px;
+  width: 625px;
+  position: relative;
+  left: 450px;
+  display: flex;
+}
+.container4 p {
+  font-size: 20px;
+}
+.container4 h3 {
+  position: relative;
+  left: 473px;
+}
+.container5 {
+  height: 80px;
+  width: 625px;
+  position: relative;
+  left: 450px;
+  display: flex;
+}
+.container5 p {
+  font-size: 30px;
+  position: relative;
+  top: 15px;
+}
+.container5 h3 {
+  position: relative;
+  left: 445px;
+  top: 15px;
+  font-size: 25px;
+}
+.place-order {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  height: 50px;
+  width: 500px;
+  color: white;
+  background-color:#871ae7;;
+  position: relative;
+  top: 50px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.space {
+  height: 50px;
+}
+.footer {
+  height: 330px;
+  width: 100%;
+  background-color: #260943;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: white;
+}
+.footer1 {
+  height: 315px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  height: 225px;
+  width: 300px;
+}
+.footer2 {
+  height: 330px;
+  width: 350px;
+}
+.footer2 ul li {
+  margin-left: 20px;
+}
+.footer2 ul li:hover {
+  text-decoration: underline;
+}
+.footer3 {
+  height: 330px;
+  width: 350px;
+}
+.footer3 ul li {
+  margin-left: 20px;
+}
+.footer3 ul li:hover {
+  text-decoration: underline;
+}
+.footer4 {
+  height: 330px;
+  width: 350px;
+}
+.footer4 ul {
+  margin-left: 20px;
+}
+.footer-social-icon {
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-social-icon img {
+  height: 30px;
+  width: 30px;
+}
+.copyright {
+  height: 50px;
+  width: 100%;
+  background-color: #260943;
+}
+.copyright p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+}

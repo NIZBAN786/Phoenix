@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    h2, h3 {
+      color: #333;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    .section h3 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 2px;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      padding: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Admin Dashboard</h2>
+  </header>
+  <div class="container">
+    <!-- Users Section -->
+    <div class="section">
+      <h3>Users</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+            <td>{{ user.username }}</td>
+            <td>
+              <form action="{{ url_for('delete_user', username=user.username) }}" method="post" style="display:inline;">
+                <button type="submit">Delete</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Orders Section -->
+    <div class="section">
+      <h3>Orders</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>Pincode</th>
+            <th>Phone Number</th>
+            <th>Payment Method</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for order in orders %}
+          <tr>
+            <td>{{ order.order_id }}</td>
+            <td>{{ order.username }}</td>
+            <td>{{ order.first_name }} {{ order.last_name }}</td>
+            <td>{{ order.address }}</td>
+            <td>{{ order.state }}</td>
+            <td>{{ order.pincode }}</td>
+            <td>{{ order.phone_number }}</td>
+            <td>{{ order.payment_method }}</td>
+            <td>{{ order.product_name }}</td>
+            <td>{{ order.product_price }}</td>
+            <td>{{ order.status }}</td>
+            <td>
+              {% if order.status not in ['Confirmed', 'Cancelled'] %}
+              <form action="{{ url_for('accept_order', order_id=order.order_id) }}" method="post">
+                <button type="submit">Accept Order</button>
+              </form>
+              {% endif %}
+              {% if order.status != 'Cancelled' %}
+              <form action="{{ url_for('cancel_order', order_id=order.order_id) }}" method="post">
+                <button type="submit">Cancel</button>
+              </form>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Carts Section -->
+    <div class="section">
+      <h3>Carts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Cart Items</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for cart in carts %}
+          <tr>
+            <td>{{ cart.username }}</td>
+            <td>
+              <ul>
+                {% for item in cart.cart %}
+                <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

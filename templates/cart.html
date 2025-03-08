@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="/static/index.css">
+  <style>
+    .cart {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .cart ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .cart ul li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart ul li h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .cart ul li img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .cart ul li form {
+      margin: 0;
+    }
+
+    .cart ul li button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cart ul li button:hover {
+      background-color: #ff1a1a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="left">
+          <a href="/">
+              <div class="brandname"></div>
+          </a>
+      </div>
+      <div class="middle">
+          <a href="/#products" class="product">PRODUCTS</a>
+          <a href="/">
+              <div class="logo"></div>
+          </a>
+          <a href="/support">
+              <div class="support">SUPPORT</div>
+          </a>
+          <a href="/about">
+              <div class="about">ABOUT US</div>
+          </a>
+      </div>
+      <div class="right">
+          <a href="/profile">
+              <div class="signup">PROFILE</div>
+          </a>
+      </div>
+  </div>
+  </header>
+  <div class="cart">
+    <h1>Your Cart</h1>
+    <ul>
+      {% for item, image in zip(cart_items, cart_images) %}
+      
+       <li>
+        <a href="/{{item}}"><img src="{{ image }}" alt="Product Image" class="image"/><h3>{{item}}</h3></a>
+        <form action="{{ url_for('remove_from_cart', product_id=item) }}" method="post">
+          <button type="submit">Remove</button>
+        </form>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+
+</html>

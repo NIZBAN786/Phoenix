@@ -1,0 +1,7 @@
+flask
+flask-Bcrypt
+flask-Session
+pymongo
+requests
+beautifulsoup4
+fpdf

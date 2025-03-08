@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flobuds 200</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/flobuds200.css">
+</head>
+<body>
+    <header>    
+        <div class="navbar">
+            <div class="left">
+                <a href="/"><div class="brandname"></div></a>
+            </div>
+            <div class="middle">
+                <a href="/"><div class="product">PRODUCT</div></a>
+                <a href="/"><div class="logo"></div></a>
+                <a href="/support"><div class="support">SUPPORT</div></a>
+                <a href="/about"><div class="aboutus">ABOUT US</div></a>
+            </div>
+            <div class="right">
+                <a href="/profile"><div class="signup">PROFILE</div></a>
+            </div>
+        </div>
+    </header>
+    <div class="slider" id="slider">
+        <img id="img1" src="/static/Image/Phoenix/earbuds-img/Flobuds200/flobuds2001.jpg" class="img" onmouseover="setimg(this)"/>
+        <img src="/static/Image/Phoenix/earbuds-img/Flobuds200/flobuds2002.jpg" class="img" onmouseover="setimg(this)"/>
+        <img src="/static/Image/Phoenix/earbuds-img/Flobuds200/flobuds2003.jpg" class="img" onmouseover="setimg(this)"/>
+        <img src="/static/Image/Phoenix/earbuds-img/Flobuds200/flobuds2004.jpg" class="img" onmouseover="setimg(this)"/>
+        <img src="/static/Image/Phoenix/earbuds-img/Flobuds200/flobuds2005.jpg" class="img" onmouseover="setimg(this)"/>
+    </div>
+    <div class="bigimage" id="bigimage">
+        <img src="/static/Image/Phoenix/earbuds-img/Flobuds200/flobuds2001.jpg" id="bigimg"/>
+    </div>
+    <h1 class="product_name" id="product">Flobuds 200</h1>
+    <h3 class="flobuds100-before-price">Rs.2,499.00</h3>
+    <h3 class="flobuds100-after-price" id="price">Rs.1,299.00</h3>
+    <h6 class="color">Color:</h6>
+    <div type="color" name="color1" id="color1"></div>
+
+    <a href="/productdetail"><button class="buy-button">Buy Now</button></a>
+    <form action="{{ url_for('add_to_cart', product_id='flobuds200') }}" method="post">
+        <button type="submit" class="add_to_cart">Add to Cart</button>
+      </form>
+    <div class="additional-information">
+        <h3 class="additional-information-title">Additional Information</h3>
+            <div class="image1"></div>
+            <div class="image2"></div>
+            <div class="image3"></div>
+            <div class="image4"></div>
+            <div class="image5"></div>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <a href="/"><img src="/static/Image/Phoenix/brand-logo/logo-white.png" class="footer-logo"></a>
+        </div>
+        <div class="footer2">
+            <br><br>
+            <h2>Stuff You Should Buy</h2>
+            <br>
+            <ul>
+               <li><a href="/wirelessearbuds">Wireless Earbuds</a></li><br>
+               <li><a href="/headphones">Headphones</a></li><br>
+               <li><a href="/speakers">Speakers</a></li><br>
+               <li><a href="/keyboards">Keyboards</a></li><br>
+            </ul>
+        </div>
+        <div class="footer3">
+            <br><br>
+            <h2>Stuff You Should Know</h2>
+            <br>
+            <ul>
+                <li><a href="/about">About Us</a></li><br>
+                <li><a href="/support">Support</a></li><br>
+                <li><a href="/support">Terms and Conditions</a></li><br>
+                <li><a href="/support">Privacy Policy</a></li><br>
+                <li><a href="/support">Shipping Policy</a></li><br>
+                <li><a href="/support">Refund Policy</a></li><br>
+            </ul>
+        </div>
+        <div class="footer4">
+            <br><br>
+            <h2>Stuff You Should Know</h2>
+            <br>
+            <ul>
+                Stay Tuned For offers & updates<br> from Phoenix
+            </ul>
+            <div class="footer-social-icon">
+                <a href="https://www.instagram.com/"><img src="/static/Image/Phoenix/social-media-icons/instagram-icon-white&black.png" alt="instagram-icon"></a>
+                <a href="https://www.facebook.com/"><img src="/static/Image/Phoenix/social-media-icons/facebook-icon-white&black.png" alt="facebook-icon"></a>
+                <a href="https://www.youtube.com/"><img src="/static/Image/Phoenix/social-media-icons/youtube-icon-white&black.png" alt="youtube-icon"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights © 2024 [Phoenix]. All rights reserved</p>
+    </div>
+    <script>
+        function setimg(smallimg)
+        {
+            let fullimg = document.getElementById("bigimg");
+            fullimg.src = smallimg.src;
+        }
+
+        const img = document.getElementById("img1").src;
+        const price = document.getElementById("price").innerText;
+        const product = document.getElementById("product").innerText;
+
+        localStorage.setItem('img', img);
+        localStorage.setItem('price', price);
+        localStorage.setItem('product', product);
+    </script>
+</body>
+</html>

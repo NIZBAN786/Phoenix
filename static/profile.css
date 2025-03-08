@@ -1,0 +1,96 @@
+*,a{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: "Gilmer-Medium", sans-serif !important;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: black;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left, .middle, .right {
+    display: flex;
+    align-items: center;
+}
+
+.brandname, .logo {
+    height: 34px;
+    width: 120px;
+    background-size: cover;
+    background-image: url("Image/Phoenix/brand-logo/brandname.png");
+}
+
+.product, .support, .aboutus, .logout {
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.profile-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-container h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.profile-container p {
+    font-size: 18px;
+    color: #666;
+}
+
+.profile-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-container th, .profile-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.profile-container th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.profile-container td {
+    color: black;
+}
+
+.profile-container td.action {
+    color: blue;
+}
+
+.profile-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.profile-container tr:hover {
+    background-color: #ddd;
+}
+
+.profile-container button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.profile-container button:hover {
+    background-color: darkblue;
+}

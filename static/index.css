@@ -1,0 +1,632 @@
+*,
+a,
+li {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Gilmer-Medium", sans-serif !important;
+}
+.navbar {
+  background-color: black;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left {
+  height: 65px;
+  width: 440px;
+  display: flex;
+  align-items: center;
+}
+.brandname {
+  height: 34px;
+  width: 120px;
+  background-size: cover;
+  background-image: url("Image/Phoenix/brand-logo/brandname.png");
+  position: relative;
+}
+.middle {
+  height: 65px;
+  width: 536px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.product {
+  cursor: pointer;
+}
+.logo {
+  height: 87px;
+  width: 100px;
+  background-image: url("Image/Phoenix/brand-logo/logo.png");
+  background-size: contain;
+  position: relative;
+  top: 5px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.right {
+  height: 65px;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.login {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.login:hover {
+  transform: scale(1.15);
+}
+.signup {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.signup:hover {
+  transform: scale(1.15);
+}
+#banner {
+  width: 100vw;
+  height: 576px;
+  background-size: cover;
+}
+.banner .img {
+  width: 100vw;
+  height: 576px;
+}
+.service {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.warranty {
+  height: 64px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-right: solid 3px gray;
+  gap: 15px;
+  font-weight: 600;
+}
+.replacement {
+  height: 64px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-right: solid 3px gray;
+  gap: 15px;
+  font-weight: 600;
+}
+.shipping {
+  height: 64px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-right: solid 3px gray;
+  gap: 15px;
+  font-weight: 600;
+}
+.checkout {
+  height: 64px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+}
+.products {
+  height: 480px;
+  width: 100%;
+}
+.products-title {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.four-products {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.wireless-earbuds {
+  background-image: url("Image/Phoenix/products/products-background.jpg");
+  width: 320px;
+  height: 240px;
+  transition: all 0.5s ease;
+}
+.wireless-earbuds-img {
+  width: 100%;
+  height: 160px;
+}
+.wireless-earbuds-h1 {
+  height: 64px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.wireless-earbuds:hover {
+  transform: scale(1.15);
+}
+.headphones {
+  background-image: url("Image/Phoenix/products/products-background.jpg");
+  width: 320px;
+  height: 240px;
+  transition: all 0.5s ease;
+}
+.headphones-img {
+  width: 100%;
+  height: 160px;
+}
+.headphones-h1 {
+  height: 64px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.headphones:hover {
+  transform: scale(1.15);
+}
+.speakers {
+  background-image: url("Image/Phoenix/products/products-background.jpg");
+  width: 320px;
+  height: 240px;
+  transition: all 0.5s ease;
+}
+.speakers-img {
+  width: 100%;
+  height: 160px;
+}
+.speakers-h1 {
+  height: 64px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.speakers:hover {
+  transform: scale(1.15);
+}
+.keyboards {
+  background-image: url("Image/Phoenix/products/products-background.jpg");
+  width: 320px;
+  height: 240px;
+  transition: all 0.5s ease;
+}
+.keyboards-img {
+  width: 100%;
+  height: 160px;
+}
+.keyboards-h1 {
+  height: 64px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.keyboards:hover {
+  transform: scale(1.15);
+}
+.new-launches {
+  height: 800px;
+  width: 100%;
+}
+.new-launches-title {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.three-products {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.flobuds100-h3 {
+  color: #464646;
+  font-size: 18px;
+  height: 70px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.flobuds100-price {
+  align-items: center;
+  display: flex;
+}
+.flobuds100-before-price {
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: line-through red;
+}
+.flobuds100-after-price {
+  color: #60c83d;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  left: 15px;
+}
+.flobuds100-buy-button {
+  background-color: #60c83d;
+  position: relative;
+  left: 50px;
+  width: 112px;
+  height: 24px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.flobuds100-img:hover {
+  border-radius: 20px;
+}
+.flobuds100:hover {
+  border-radius: 20px;
+  background-color: #eeeeee;
+}
+.flobuds200-h3 {
+  color: #464646;
+  font-size: 18px;
+  height: 70px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.flobuds200-price {
+  align-items: center;
+  display: flex;
+}
+.flobuds200-before-price {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: line-through red;
+}
+.flobuds200-after-price {
+  color: #60c83d;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  left: 15px;
+}
+.flobuds200-buy-button {
+  background-color: #60c83d;
+  position: relative;
+  left: 50px;
+  width: 112px;
+  height: 24px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.flobuds200-img:hover {
+  border-radius: 20px;
+}
+.flobuds200:hover {
+  border-radius: 20px;
+  background-color: #eeeeee;
+}
+.phantom340-h3 {
+  color: #464646;
+  font-size: 18px;
+  height: 70px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.phantom340-price {
+  align-items: center;
+  display: flex;
+}
+.phantom340-before-price {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: line-through red;
+}
+.phantom340-after-price {
+  color: #60c83d;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  left: 15px;
+}
+.phantom340-buy-button {
+  background-color: #60c83d;
+  position: relative;
+  left: 50px;
+  width: 112px;
+  height: 24px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.phantom340-img:hover {
+  border-radius: 20px;
+}
+.phantom340:hover {
+  border-radius: 20px;
+  background-color: #eeeeee;
+}
+.about-us-banner {
+  width: 100%;
+  height: 704px;
+  background-color: aqua;
+}
+.about-us-banner-img {
+  height: 704px;
+}
+.get-social-with-phoenix {
+  background-color: #6ff76433;
+  width: 100%;
+  height: 528px;
+  justify-content: center;
+  align-items: center;
+}
+.get-social-with-phoenix-title {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.social-media-button {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.instagram {
+  height: 48px;
+  width: 288px;
+  border-radius: 20px;
+  position: relative;
+  left: 128px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+.instagram-logo {
+  width: 70px;
+}
+.instagram:hover {
+  transform: scale(1.15);
+}
+.instagram a {
+  text-decoration: none;
+  color: black;
+}
+.facebook {
+  height: 48px;
+  width: 272px;
+  border-radius: 20px;
+  position: relative;
+  left: -32px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+.facebook-logo {
+  width: 35px;
+}
+.facebook:hover {
+  transform: scale(1.15);
+}
+.facebook a {
+  text-decoration: none;
+  color: black;
+}
+.youtube {
+  height: 48px;
+  width: 272px;
+  border-radius: 20px;
+  position: relative;
+  left: -192px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+.youtube-logo {
+  width: 50px;
+}
+.youtube:hover {
+  transform: scale(1.15);
+}
+.youtube a {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  height: 330px;
+  width: 100%;
+  background-color: #260943;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: white;
+}
+.footer1 {
+  height: 315px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  height: 225px;
+  width: 300px;
+}
+.footer2 {
+  height: 330px;
+  width: 350px;
+}
+.footer2 ul li {
+  margin-left: 20px;
+}
+.footer2 ul li:hover {
+  text-decoration: underline;
+}
+.footer3 {
+  height: 330px;
+  width: 350px;
+}
+.footer3 ul li {
+  margin-left: 20px;
+}
+.footer3 ul li:hover {
+  text-decoration: underline;
+}
+.footer4 {
+  height: 330px;
+  width: 350px;
+}
+.footer4 ul {
+  margin-left: 20px;
+}
+.footer-social-icon {
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-social-icon img {
+  height: 30px;
+  width: 30px;
+}
+.copyright {
+  height: 50px;
+  width: 100%;
+  background-color: #260943;
+}
+.copyright p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+}
+
+.cart {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart ul li h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.cart ul li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart ul li form {
+  margin: 0;
+}
+
+.cart ul li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart ul li button:hover {
+  background-color: #ff1a1a;
+}

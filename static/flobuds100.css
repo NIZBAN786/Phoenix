@@ -1,0 +1,344 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Gilmer-Medium", sans-serif !important;
+}
+.navbar {
+  background-color: black;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.left {
+  height: 65px;
+  width: 440px;
+  display: flex;
+  align-items: center;
+}
+.brandname {
+  height: 34px;
+  width: 120px;
+  background-size: cover;
+  background-image: url("Image/Phoenix/brand-logo/brandname.png");
+  position: relative;
+  left: 20px;
+}
+.middle {
+  height: 65px;
+  width: 536px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.logo {
+  height: 87px;
+  width: 100px;
+  background-image: url("Image/Phoenix/brand-logo/logo.png");
+  background-size: contain;
+  position: relative;
+  top: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.right {
+  height: 65px;
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.login {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.login:hover{
+  transform: scale(1.15);
+}
+.signup {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.signup:hover{
+  transform: scale(1.15);
+}
+.slider {
+  height: 800px;
+  width: 118px;
+  position: relative;
+  top: 36px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.img {
+  width: 118px;
+  height: 118px;
+}
+.bigimage {
+  width: 560px;
+  height: 560px;
+  position: absolute;
+  top: 100px;
+  left: 270px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  object-fit: cover;
+}
+#bigimg {
+  width: 560px;
+  height: 560px;
+}
+.product_name {
+  position: absolute;
+  top: 110px;
+  left: 900px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.flobuds100-before-price {
+  position: absolute;
+  top: 175px;
+  left: 900px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #424040;
+  text-decoration: line-through red;
+}
+.flobuds100-after-price {
+  position: absolute;
+  top: 170px;
+  left: 1020px;
+  font-size: 27.2px;
+  font-weight: 500;
+  color: #60c83d;
+}
+.color {
+  font-size: 25px;
+  position: absolute;
+  top: 260px;
+  left: 900px;
+  font-weight: 100;
+}
+#color1 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 300px;
+  left: 900px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+.quantity-text {
+  position: absolute;
+  top: 420px;
+  left: 900px;
+  font-size: 25px;
+  font-weight: 100;
+}
+.quantity {
+  height: 50px;
+  width: 100px;
+  background-color: #aea6a6;
+  font-size: 1rem;
+  position: absolute;
+  top: 470px;
+  left: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-button {
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color:#871ae7;
+  border: none;
+  border-radius: 7px;
+  position: absolute;
+  left: 900px;
+  top: 419px;
+  cursor: pointer;
+}
+.add_to_cart{
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color:#871ae7;
+  border: none;
+  border-radius: 7px;
+  position: absolute;
+  left: 900px;
+  top: 500px;
+  cursor: pointer;
+}
+.additional-information-title {
+  height: 128px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image1 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/1.jpg");
+  background-size: cover;
+}
+.image2 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/2.jpg");
+  background-size: cover;
+}
+.image3 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/3.jpg");
+  background-size: cover;
+}
+.image4 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/4.jpg");
+  background-size: cover;
+}
+.image5 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/5.jpg");
+  background-size: cover;
+}
+.image6 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/6.jpg");
+  background-size: cover;
+}
+.image7 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/7.jpg");
+  background-size: cover;
+}
+.image8 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/8.jpg");
+  background-size: cover;
+}
+.image9 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/9.jpg");
+  background-size: cover;
+}
+.image10 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/10.jpg");
+  background-size: cover;
+}
+.image11 {
+  height: 633px;
+  width: 1519px;
+  background-image: url("Image/Phoenix/earbuds-img/Flobuds100/11.jpg");
+  background-size: cover;
+}
+.footer {
+  height: 330px;
+  width: 100%;
+  background-color: #260943;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  color: white;
+}
+.footer1 {
+  height: 315px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  height: 225px;
+  width: 300px;
+}
+.footer2 {
+  height: 330px;
+  width: 350px;
+}
+.footer2 ul li {
+  margin-left: 20px;
+}
+.footer2 ul li:hover {
+  text-decoration: underline;
+}
+.footer3 {
+  height: 330px;
+  width: 350px;
+}
+.footer3 ul li {
+  margin-left: 20px;
+}
+.footer3 ul li:hover {
+  text-decoration: underline;
+}
+.footer4 {
+  height: 330px;
+  width: 350px;
+}
+.footer4 ul {
+  margin-left: 20px;
+}
+.footer-social-icon {
+  height: 70px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-social-icon img {
+  height: 30px;
+  width: 30px;
+}
+.copyright {
+  height: 50px;
+  width: 100%;
+  background-color: #260943;
+}
+.copyright p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Phoenix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/profile.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">
+                <a href="/"><div class="brandname"></div></a>
+            </div>
+            <div class="middle">
+                <a href="/#products"><div class="product">PRODUCT</div></a>
+                <a href="/cart"><div class="product">CART</div></a>
+                <a href="/"><div class="logo"></div></a>
+                <a href="/support"><div class="support">SUPPORT</div></a>
+                <a href="/about"><div class="aboutus">ABOUT US</div></a>
+            </div>
+            <div class="right">
+                <a href="/logout"><div class="logout">LOGOUT</div></a>
+            </div>
+        </div>
+    </header>
+    <div class="profile-container">
+        <h1>Welcome, {{ session['username'] }}</h1>
+        <h3 style="color: black;">Your Orders</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>{{ order.order_id }}</td>
+                    <td>{{ order.product_name }}</td>
+                    <td>{{ order.product_price }}</td>
+                    <td>{{ order.status }}</td>
+                    <td class="action">
+                        {% if order.status in ["Processing", "Confirmed"] %}
+                        <form action="{{ url_for('user_cancel_order', order_id=order.order_id) }}" method="post">
+                            <button type="submit">Cancel Order</button>
+                        </form>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
